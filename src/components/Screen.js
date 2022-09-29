@@ -1,4 +1,5 @@
-const Screen = ({ value }) => {
+const Screen = ({ result, nums, operator, secondNums}) => {
+
   return (
     <div
       style={{
@@ -7,9 +8,10 @@ const Screen = ({ value }) => {
         height: 70,
         textAlign: "right",
         marginBottom: 10,
+        color: 'blue',
       }}
     >
-      {value}
+      {nums} {operator}  {secondNums} equals {result}
     </div>
   );
 };
